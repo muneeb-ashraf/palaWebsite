@@ -1910,8 +1910,8 @@
       window.addEventListener('scroll', () => { scrollTarget = window.scrollY; }, { passive: true });
       (function heroLoop() {
         requestAnimationFrame(heroLoop);
-        scrollCurrent += (scrollTarget - scrollCurrent) * 0.08;
-        heroVideo.style.transform = `translateY(${scrollCurrent * 0.08}px)`;
+        scrollCurrent += (scrollTarget - scrollCurrent) * 0.04;
+        heroVideo.style.transform = `translateY(${scrollCurrent * 0.04}px)`;
       })();
     })();
 
